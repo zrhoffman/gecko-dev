@@ -2,6 +2,7 @@
 
 import json
 import os
+import platform
 import re
 import signal
 import subprocess
