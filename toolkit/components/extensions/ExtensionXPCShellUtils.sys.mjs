@@ -758,6 +758,14 @@ export var ExtensionTestUtils = {
     }
   },
 
+  get remoteContentScripts() {
+    return XPCShellContentUtils.remoteContentScripts;
+  },
+
+  set remoteContentScripts(val) {
+    XPCShellContentUtils.remoteContentScripts = val;
+  },
+
   /** @param {[origin: string, url: string, options: object]} args */
   async fetch(...args) {
     return XPCShellContentUtils.fetch(...args);
