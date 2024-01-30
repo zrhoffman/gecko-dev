@@ -140,7 +140,7 @@ add_task(async function test_contentscript_runAt() {
 });
 
 add_task(async function test_contentscript_window_open() {
-  if (AppConstants.DEBUG && Services.appinfo.browserTabsRemoteAutostart) {
+  if (AppConstants.DEBUG && ExtensionTestUtils.remoteContentScripts) {
     return;
   }
 
