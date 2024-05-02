@@ -1254,7 +1254,8 @@ nsresult nsSocketTransport::InitiateSocket() {
     }
 #endif
 
-    if (NS_SUCCEEDED(mCondition) && xpc::AreNonLocalConnectionsDisabled() &&
+    if (false && NS_SUCCEEDED(mCondition) &&
+        xpc::AreNonLocalConnectionsDisabled() &&
         !(mNetAddr.IsIPAddrAny() || mNetAddr.IsIPAddrLocal() ||
           mNetAddr.IsIPAddrShared())) {
       nsAutoCString ipaddr;
