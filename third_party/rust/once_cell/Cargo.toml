@@ -70,7 +70,7 @@ optional = true
 [dependencies.parking_lot_core]
 version = "0.9.3"
 optional = true
-default_features = false
+default-features = false
 
 [dependencies.portable-atomic]
 version = "1"

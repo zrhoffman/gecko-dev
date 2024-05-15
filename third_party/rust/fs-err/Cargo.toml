@@ -50,7 +50,7 @@ rustdoc-args = [
 version = "1.21"
 features = ["fs"]
 optional = true
-default_features = false
+default-features = false
 
 [dev-dependencies.serde_json]
 version = "1.0.64"

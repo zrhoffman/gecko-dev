@@ -55,7 +55,7 @@ version = "0.2.3"
 
 [dependencies.scroll]
 version = "0.12"
-default_features = false
+default-features = false
 
 [dev-dependencies.stderrlog]
 version = "0.5.4"
