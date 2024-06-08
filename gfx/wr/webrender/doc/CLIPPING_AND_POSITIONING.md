@@ -124,7 +124,7 @@ never result in the creation of a clip mask itself.
 WebRender must access `ClipNodes` and `SpatialNodes` quite a bit when building
 scenes and frames, so it tries to convert `ClipId`/`SpatialId`, which are already
 per-pipeline indices, to global scene-wide indices.  Internally this is a
-conversion from `ClipId` into `ClipNodeIndex` or `ClipChainIndex`, and from
+conversion from `ClipId` into `ClipChainIndex`, and from
 `SpatialId` into `SpatialNodeIndex`. In order to make this conversion cheaper, the
 `DisplayListFlattner` assigns offsets for each pipeline and node type in the
 scene-wide `SpatialTree`.
