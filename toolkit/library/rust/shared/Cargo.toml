@@ -160,7 +160,6 @@ test = false
 doctest = false
 bench = false
 doc = false
-plugin = false
 harness = false
 
 [package.metadata.cargo-udeps.ignore]
