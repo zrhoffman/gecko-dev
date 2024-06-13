@@ -15,9 +15,16 @@ mod ffi {
 
     extern "C" {
         // These are implemented in dom/promise/Promise.cpp
+        #[allow(dead_code)]
         pub fn DomPromise_AddRef(promise: *const Promise);
+
+        #[allow(dead_code)]
         pub fn DomPromise_Release(promise: *const Promise);
+
+        #[allow(dead_code)]
         pub fn DomPromise_RejectWithVariant(promise: *const Promise, variant: *const nsIVariant);
+
+        #[allow(dead_code)]
         pub fn DomPromise_ResolveWithVariant(promise: *const Promise, variant: *const nsIVariant);
     }
 }
