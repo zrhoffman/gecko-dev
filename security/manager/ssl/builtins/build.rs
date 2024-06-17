@@ -347,13 +347,7 @@ fn main() -> std::io::Result<()> {
         File::create(out_path.join("builtins.rs")).expect("Could not write builtins.rs."),
     );
 
-    // If we are building the test module, use the certdata.txt in the test directory.
-    #[cfg(feature = "testlib")]
-    let mut input =
-        std::fs::read_to_string(testlib_certdata).expect("Unable to read certdata.txt.");
-
     // Otherwise, use the official certdata.txt for the Mozilla root store.
-    #[cfg(not(feature = "testlib"))]
     let mut input =
         std::fs::read_to_string(mozilla_certdata).expect("Unable to read certdata.txt.");
 
