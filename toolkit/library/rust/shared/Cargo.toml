@@ -1,5 +1,6 @@
 
 [package]
+edition = "2015"
 name = "gkrust-shared"
 version = "0.1.0"
 authors = ["The Mozilla Project Developers"]
